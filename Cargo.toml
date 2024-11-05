@@ -1,0 +1,19 @@
+[package]
+name = "davids-awesome-library"
+version = "0.1.0"
+edition = "2021"
+authors = ["Confused Engineer"]
+
+[dependencies]
+chrono = "0.4.38"
+regex = "1.11.1"
+reqwest = { version = "0.12.9", features = ["blocking"] }
+encoding_rs = "0.8.35"
+encoding_rs_io = "0.1.7"
+serde = { version = "1.0.214", features = ["derive"] }
+serde_yaml = "0.9.34+deprecated"
+
+rusqlite = { version = "0.32.0", features = ["bundled"] }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winreg = "0.52"
