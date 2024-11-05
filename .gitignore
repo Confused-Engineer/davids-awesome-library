@@ -1,3 +1,10 @@
+.DS_Store
 /target
 /assets/key
-.DS_Store
+/assets/api_key
+debug/
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+/Cargo.lock
